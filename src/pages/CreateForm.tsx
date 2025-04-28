@@ -32,7 +32,7 @@ const CreateForm: React.FC<CreateFormProps> = ({ onBack, onCreateSuccess }) => {
     course => course.facultyId === currentUser?.id
   );
   
-  // Calculate minimum date (today) for deadline input
+  // Calculate minimum date (today) for deadline inputs
   const today = new Date();
   const minDate = today.toISOString().split('T')[0];
   
